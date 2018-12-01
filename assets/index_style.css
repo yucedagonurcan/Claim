@@ -1,0 +1,46 @@
+.card{
+    width: 300px;
+    margin: 2%;
+    /* border: 1px solid black; */
+
+}
+.card-body{
+    transition: background 0.5s ease-in;
+}
+.card:hover{
+    background-color: #306efe;
+    color: #ffffff;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+.stars_class{
+    padding: 10px;
+}
+.container-fluid{
+    width: 100%;
+    /* border: 1px solid blue; */
+
+}
+.row{    
+    /* border: 1px solid red; */
+}
+.logo{
+    height: 100px;
+    background-image: url("images/claim.svg");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: center;
+    background-color: #beedff; 
+}
+#card-row{
+	font-size: 14px;
+	font-weight: 400;
+    font-style: italic;
+    width: 100%;
+}
+#search-box{
+    width: 500px;
+}
+
+

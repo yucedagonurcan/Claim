@@ -1,0 +1,21 @@
+{
+  "name": "simonproject",
+  "version": "1.0.0",
+  "description": "SimOn Project based NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap-rating": "0.0.1",
+    "ejs": "^2.6.1",
+    "express": "latest",
+    "jquery": "^3.3.1",
+    "jquery-bar-rating": "^1.2.2",
+    "jsdom": "^13.0.0",
+    "mysql": "^2.16.0"
+  }
+}
