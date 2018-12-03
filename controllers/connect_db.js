@@ -1,5 +1,5 @@
 const mysql_connection_object = {
-    connectionLimit:10,
+    connectionLimit:20,
     host: 'localhost',
     user:'root',
     database: 'MovieLensDatabase',

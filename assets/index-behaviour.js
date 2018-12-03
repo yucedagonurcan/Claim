@@ -3,6 +3,18 @@ function IsNumeric(val) {
     return Number(parseInt(val)) == val;
 }
 $(document).ready(function(){
+    $("#generate-btn").click(async function (){
+    
+        console.log("Button is pressed.");
+        $.ajax({
+            type: 'GET',
+            contentType: 'application/json',
+            url: '/index/recommend',						
+            success: function(data){
+                console.log(data);
+            }
+        });
+    })
     $('.card').on('click', function(){
         console.log($(this).find("collapse"));
         $(this).find( ".collapse" ).collapse('toggle');
