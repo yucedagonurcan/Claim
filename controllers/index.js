@@ -30,21 +30,21 @@ module.exports = function(app) {
             if (err) {
                 return res.status(500).send(err);
             }
+            console.log(result.length)
             movies_dataset = result;
 
         });
 
 
 
-        const query_movies_db = "SELECT MAX(MovieID) AS 'NumberOfMovies' FROM Movies";
+        const query_movies_db = "CALL GetNumberOfMovies()";
 
         // Max id in movie dataset.
         pool.query(query_movies_db, (err, result) => {
             if (err) {
                 return res.status(500).send(err);
             }
-
-            num_of_movies = result[0].NumberOfMovies;
+            num_of_movies = result[0][0].NumberOfMovies;
             console.log("Number Of Movies : " + num_of_movies);
 
         });
@@ -129,9 +129,6 @@ module.exports = function(app) {
                         break;
                     }
                 }
-                    
-                     
-                  
             }
             res.render('recommend', {movies_data: movies_data});
         }); 

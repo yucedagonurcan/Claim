@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="/index_style.css">
         <script src="/index-behaviour.js"></script>
     </head>
+
+    <% include ./partials/loading %>
     <% include ./partials/header %>
     <% include ./partials/search_box.ejs %>
 
@@ -38,7 +40,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 ml-2">
-                    <a href="/index/recommend"  id="generate-btn" class="btn btn-lg btn-primary" onclick="console.log('Recommend button is clicked.');">Generate <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a href="/index/recommend"  id="generate-btn" class="btn btn-lg btn-primary" onclick="">Generate <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
     </div>

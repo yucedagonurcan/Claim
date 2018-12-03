@@ -2,9 +2,27 @@ function IsNumeric(val) {
     console.log(val);
     return Number(parseInt(val)) == val;
 }
+
 $(document).ready(function(){
     $("#generate-btn").click(async function (){
     
+        
+        $('#myModal').modal('toggle');
+
+        $(function() {
+            var current_progress = 10;
+            var interval = setInterval(function() {
+                current_progress += 4;
+                $("#progress_bar")
+                .css("width", current_progress + "%")
+                .attr("aria-valuenow", current_progress)
+                .text(current_progress + "% Complete");
+                if (current_progress >= 100)
+                    clearInterval(interval);
+            }, 1000);
+          });
+
+
         console.log("Button is pressed.");
         $.ajax({
             type: 'GET',

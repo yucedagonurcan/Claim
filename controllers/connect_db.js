@@ -2,7 +2,7 @@ const mysql_connection_object = {
     connectionLimit:20,
     host: 'localhost',
     user:'root',
-    database: 'MovieLensDatabase',
+    database: 'Claim',
     password: 'newrootpassword'
 };
 

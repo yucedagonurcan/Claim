@@ -42,5 +42,7 @@
 #search-box{
     width: 500px;
 }
-
-
+#progress {
+	height: 3em;
+	margin: 10px 10px;
+}
