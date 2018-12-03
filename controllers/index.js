@@ -64,7 +64,6 @@ module.exports = function(app) {
             if (err) {
                 return res.status(500).send(err);
             }
-
             num_of_users = result[0][0].NumberOfUsers;
             console.log("Number of Users: " + num_of_users);
         });
